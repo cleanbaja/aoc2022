@@ -1,0 +1,7 @@
+[workspace]
+
+# Every single day in the advent of code is represented as a seperate project
+
+members = [
+    "day01",
+]
