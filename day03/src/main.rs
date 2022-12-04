@@ -11,7 +11,7 @@ fn find_priority(ch: char) -> u32 {
     }
 }
 
-/// Takes a slice of [&str], and finds the priority of 
+/// Takes a slice of [&str], and finds the priority of
 /// each elem (rucksack), returning the sum
 fn get_prio_sum(lines: &[&str]) -> u32 {
     let mut score = 0;

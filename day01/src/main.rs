@@ -33,7 +33,6 @@ fn generate_set(lines: &Vec<String>) -> io::Result<Vec<u32>> {
     Ok(dataset)
 }
 
-
 /// Generates a set from `lines`, then returns the largest
 /// number in the set
 #[inline]

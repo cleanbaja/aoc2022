@@ -20,7 +20,7 @@ fn get_score(lines: &Vec<&str>) -> u32 {
             "B Y" => score += 5,
             // paper + scissors -> win
             "B Z" => score += 9,
-            
+
             // scissors + rock -> win
             "C X" => score += 7,
             // scissors + paper -> loss
@@ -28,7 +28,7 @@ fn get_score(lines: &Vec<&str>) -> u32 {
             // scissors + scissors -> draw
             "C Z" => score += 6,
 
-            _ => eprintln!("unknown input {}!", *line)
+            _ => eprintln!("unknown input {}!", *line),
         }
     }
 
@@ -54,7 +54,7 @@ fn get_score_type2(lines: &Vec<&str>) -> u32 {
             "B Y" => score += 5,
             // paper + win -> scissors
             "B Z" => score += 9,
-            
+
             // scissors + lose -> paper
             "C X" => score += 2,
             // scissors + draw -> scissors
@@ -62,7 +62,7 @@ fn get_score_type2(lines: &Vec<&str>) -> u32 {
             // scissors + win -> rock
             "C Z" => score += 7,
 
-            _ => eprintln!("unknown input {}!", *line)
+            _ => eprintln!("unknown input {}!", *line),
         }
     }
 
